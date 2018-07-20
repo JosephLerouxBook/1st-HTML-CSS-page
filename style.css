@@ -1,0 +1,205 @@
+/*
+titre
+*/
+.photo1 a span {
+	display: none;
+}
+.photo1 a:hover span {
+	display: block;
+}
+.photo1 a{
+	text-decoration: none;
+	color: black;
+}
+
+/*
+mise en page basique, bold ect...
+*/
+
+.gras1, .gras2
+{
+	font-weight:bold;
+}
+.oblique1
+{
+	font-style:oblique;
+}
+.clear
+{
+	clear: both;
+}
+.imageflottante1, .imageflottante2, .imageflottante3, .imageflottante4
+{
+	width: 5%;
+	height: auto;
+	float:left;
+	padding-left: 200px;
+}
+.wowhead3 a, .wowhead1 a, .wowhead2 a
+{
+	color: green;
+}
+.wowhead1 a:visited, .wowhead2 a:visited, .wowhead3 a:visited
+{
+	color:grey;
+}
+.map1, .map2
+{padding-left: 600px;}
+.map3, .map4, .map5, .map6
+{padding-left: 450px;}
+.droprate 
+{padding-left: 350px;}
+
+/*
+ Background
+*/
+body
+{
+	margin:0;
+  	padding:0;
+  	background: url(src/background1.png) no-repeat center fixed; 
+  	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  	background-size: cover; /* version standardisée */
+}
+/*
+Mise en page des titres + paragraphe
+*/ 
+
+
+@font-face {
+    font-family: 'Crown';
+    src: url('font/crown.ttf');
+}
+@font-face {
+    font-family: 'Arcade';
+    src: url('font/arcade.ttf');
+}
+@font-face {
+    font-family: 'Athletic';
+    src: url('font/athletic.ttf');
+}
+@font-face {
+    font-family: 'Academic';
+    src: url('font/Academic.ttf');
+}
+@font-face {
+    font-family: 'Academic_empty';
+    src: url('font/academic_empty.ttf');
+}
+@font-face {
+    font-family: 'Bascula';
+    src: url('font/bascula.ttf');
+}
+@font-face {
+    font-family: 'College';
+    src: url('font/college.ttf');
+}
+@font-face {
+    font-family: 'Pornsa';
+    src: url('font/pornsa.ttf');
+}
+
+section
+{
+	clear:left;
+}
+h3, h4, h5, h6 
+{text-decoration: underline;}
+h1{
+	font-size: 120px;
+	font-family: Crown;
+	width: 70%;
+  	min-width: 300px;
+  	text-align: center;
+  	padding-left: 300px;
+  }
+h2{
+	font-size: 70px;
+	font-family: Arcade;
+	text-align: left;
+	  	padding-left: 300px;
+}
+h3{
+	font-size: 60px;
+	font-family: Academic_empty;
+  	padding-left: 200px;
+}
+h4{
+	font-size: 50px;
+	font-family: Academic;
+	padding-left: 225px;
+}
+h5{
+	font-size: 40px;
+	font-family: Pornsa;
+	padding-left: 225px;
+}
+h6{
+	font-size: 30px;
+	font-family: College;
+  	padding-left: 225px;
+}
+p{ 
+	font-size:22px;
+	font-family: Athletic;
+	padding-left: 250px;
+}
+section ul{
+	font-size:22px;
+	font-family: Athletic;
+	padding-left: 320px;
+	clear: both;
+}
+
+
+/* 
+Mise en place du panneau de navigation horizontal top
+*/
+
+nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding-left: 650px;
+	background-color: rgba(30, 30, 30, 0.3); /* Fond rouge à moitié transparent */
+	display: flex; 
+	width:100%;
+	height: 55px;
+	overflow: hidden;
+}
+nav li a {
+	font-family: Athletic;
+	font-size: 25px;
+	display: block;
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+nav li a:hover
+{
+	    background-color: rgba(255, 0, 0, 0.3); /* Fond rouge à moitié transparent */
+}
+.menu
+{
+	padding-left: 200;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
